@@ -1428,6 +1428,35 @@ FW_VERSIONS = {
       b'\x028646F7803100\x00\x00\x00\x008646G2601400\x00\x00\x00\x00',
     ],
   },
+  CAR.LEXUS_LC_DHP: {
+    (Ecu.abs, 0x7b0, None): [
+      b'F152611031\x00\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.dsu, 0x791, None): [
+      b'881511101200\x00\x00\x00\x00',
+    ],
+    (Ecu.srs, 0x780, None): [
+      b'8917F11021\x00\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.hvac, 0x7c4, None): [
+      b'886501101003    ',
+    ],
+    (Ecu.eps, 0x7a1, None): [
+      b'8965B11010\x00\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.engine, 0x7e0, None): [
+      b'\x0131106000\x00\x00\x00\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.transmission, 0x701, None): [
+      b'\x02896651102000\x00\x00\x00\x00894CF1102000\x00\x00\x00\x00',
+    ],
+    (Ecu.fwdCamera, 0x750, 109): [
+      b'8646F1101300\x00\x00\x00\x00',
+    ],
+    (Ecu.fwdRadar, 0x750, 15): [
+      b'8821F4702300\x00\x00\x00\x00',
+    ],
+  },
   CAR.LEXUS_LC_TSS2: {
     (Ecu.engine, 0x7e0, None): [
       b'\x0131130000\x00\x00\x00\x00\x00\x00\x00\x00',
