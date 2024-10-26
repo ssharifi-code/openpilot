@@ -178,8 +178,10 @@ class CarState(CarStateBase):
           self.zss_threshold_count += 1
         else:
           ret.steeringAngleDeg = steering_angle_deg
-
-    can_gear = int(cp.vl["GEAR_PACKET"]["GEAR"])
+    if self.CP.carFingerprint != CAR.LEXUS_LC_DHP:
+      can_gear = int(cp.vl["GEAR_PACKET"]["GEAR"])
+    elif self.CP.carFingerprint == CAR.LEXUS_LC_DHP:
+      can_gear = int(cp.vl["GEAR_PACKET"]["GEAR_SHIFTER"])
     ret.gearShifter = self.parse_gear_shifter(self.shifter_values.get(can_gear, None))
     ret.leftBlinker = ret.leftBlinkerOn = cp.vl["BLINKERS_STATE"]["TURN_SIGNALS"] == 1
     ret.rightBlinker = ret.rightBlinkerOn = cp.vl["BLINKERS_STATE"]["TURN_SIGNALS"] == 2
