@@ -181,7 +181,7 @@ class CarState(CarStateBase):
     if self.CP.carFingerprint != CAR.LEXUS_LC_DHP:
       can_gear = int(cp.vl["GEAR_PACKET"]["GEAR"])
     elif self.CP.carFingerprint == CAR.LEXUS_LC_DHP:
-      can_gear = int(cp.vl["GEAR_PACKET"]["GEAR_SHIFTER"])
+      can_gear = int(cp.vl["GEAR_PACKET"]["GEAR"])
     ret.gearShifter = self.parse_gear_shifter(self.shifter_values.get(can_gear, None))
     ret.leftBlinker = ret.leftBlinkerOn = cp.vl["BLINKERS_STATE"]["TURN_SIGNALS"] == 1
     ret.rightBlinker = ret.rightBlinkerOn = cp.vl["BLINKERS_STATE"]["TURN_SIGNALS"] == 2
