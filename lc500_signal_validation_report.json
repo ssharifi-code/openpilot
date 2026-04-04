@@ -1,0 +1,454 @@
+{
+  "summary": {
+    "total_can_frames": 237363,
+    "dbc_coverage_pct": 75.9,
+    "critical_signals_all_pass": true,
+    "decode_error_count": 120,
+    "unmatched_address_count": 128
+  },
+  "critical_signals": {
+    "WHEEL_SPEEDS": {
+      "present": true,
+      "msg_count": 9710,
+      "signals": {
+        "WHEEL_SPEED_FR": {
+          "present": true,
+          "count": 9710,
+          "min": 0.0,
+          "max": 52.26,
+          "mean": 15.7508,
+          "all_zero": false,
+          "unique_values": 50,
+          "in_range": true
+        },
+        "WHEEL_SPEED_FL": {
+          "present": true,
+          "count": 9710,
+          "min": 0.0,
+          "max": 51.86,
+          "mean": 15.4555,
+          "all_zero": false,
+          "unique_values": 50,
+          "in_range": true
+        },
+        "WHEEL_SPEED_RR": {
+          "present": true,
+          "count": 9710,
+          "min": 0.0,
+          "max": 52.68,
+          "mean": 15.8713,
+          "all_zero": false,
+          "unique_values": 50,
+          "in_range": true
+        },
+        "WHEEL_SPEED_RL": {
+          "present": true,
+          "count": 9710,
+          "min": 0.0,
+          "max": 52.2,
+          "mean": 15.6173,
+          "all_zero": false,
+          "unique_values": 50,
+          "in_range": true
+        }
+      },
+      "approx_hz": 161.8,
+      "hz_ok": true
+    },
+    "BRAKE_MODULE": {
+      "present": true,
+      "msg_count": 6054,
+      "signals": {
+        "BRAKE_PRESSURE": {
+          "present": true,
+          "count": 6054,
+          "min": 0,
+          "max": 510,
+          "mean": 39.6092,
+          "all_zero": false,
+          "unique_values": 50
+        },
+        "BRAKE_POSITION": {
+          "present": true,
+          "count": 6054,
+          "min": 0,
+          "max": 428,
+          "mean": 22.5534,
+          "all_zero": false,
+          "unique_values": 50
+        },
+        "BRAKE_PRESSED": {
+          "present": true,
+          "count": 6054,
+          "min": 0,
+          "max": 1,
+          "mean": 0.1936,
+          "all_zero": false,
+          "unique_values": 2
+        }
+      },
+      "approx_hz": 100.9,
+      "hz_ok": true
+    },
+    "STEER_TORQUE_SENSOR": {
+      "present": true,
+      "msg_count": 6002,
+      "signals": {
+        "STEER_TORQUE_DRIVER": {
+          "present": true,
+          "count": 6002,
+          "min": -144,
+          "max": 354,
+          "mean": 45.903,
+          "all_zero": false,
+          "unique_values": 50
+        },
+        "STEER_ANGLE": {
+          "present": true,
+          "count": 6002,
+          "min": -24.4098,
+          "max": 291.084,
+          "mean": 21.7652,
+          "all_zero": false,
+          "unique_values": 50
+        },
+        "STEER_TORQUE_EPS": {
+          "present": true,
+          "count": 6002,
+          "min": -2101,
+          "max": 5246,
+          "mean": 277.5548,
+          "all_zero": false,
+          "unique_values": 50
+        }
+      },
+      "approx_hz": 100.0,
+      "hz_ok": true
+    },
+    "EPS_STATUS": {
+      "present": true,
+      "msg_count": 3002,
+      "signals": {
+        "LKA_STATE": {
+          "present": true,
+          "count": 3002,
+          "min": 1,
+          "max": 1,
+          "mean": 1.0,
+          "all_zero": false,
+          "unique_values": 1
+        }
+      },
+      "approx_hz": 50.0,
+      "hz_ok": true
+    },
+    "GAS_PEDAL": {
+      "present": true,
+      "msg_count": 3780,
+      "signals": {
+        "GAS_RELEASED": {
+          "present": true,
+          "count": 3780,
+          "min": 0,
+          "max": 1,
+          "mean": 0.4259,
+          "all_zero": false,
+          "unique_values": 2
+        },
+        "GAS_PEDAL": {
+          "present": true,
+          "count": 3780,
+          "min": 0.0,
+          "max": 41.5,
+          "mean": 13.2751,
+          "all_zero": false,
+          "unique_values": 50
+        }
+      },
+      "approx_hz": 63.0,
+      "hz_ok": true
+    },
+    "STEERING_LKA": {
+      "present": true,
+      "msg_count": 8500,
+      "signals": {
+        "STEER_REQUEST": {
+          "present": true,
+          "count": 8500,
+          "min": 0,
+          "max": 1,
+          "mean": 0.0084,
+          "all_zero": false,
+          "unique_values": 2
+        },
+        "STEER_TORQUE_CMD": {
+          "present": true,
+          "count": 8500,
+          "min": -183,
+          "max": 0,
+          "mean": -1.1462,
+          "all_zero": false,
+          "unique_values": 37
+        }
+      },
+      "approx_hz": 141.7,
+      "hz_ok": true
+    },
+    "PCM_CRUISE": {
+      "present": true,
+      "msg_count": 3780,
+      "signals": {
+        "CRUISE_ACTIVE": {
+          "present": true,
+          "count": 3780,
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "all_zero": true,
+          "unique_values": 1
+        },
+        "GAS_RELEASED": {
+          "present": true,
+          "count": 3780,
+          "min": 0,
+          "max": 1,
+          "mean": 0.4254,
+          "all_zero": false,
+          "unique_values": 2
+        },
+        "CRUISE_STATE": {
+          "present": true,
+          "count": 3780,
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "all_zero": true,
+          "unique_values": 1
+        }
+      },
+      "approx_hz": 63.0,
+      "hz_ok": true
+    },
+    "PCM_CRUISE_2": {
+      "present": true,
+      "msg_count": 3780,
+      "signals": {
+        "MAIN_ON": {
+          "present": true,
+          "count": 3780,
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "all_zero": true,
+          "unique_values": 1
+        },
+        "SET_SPEED": {
+          "present": true,
+          "count": 3780,
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "all_zero": true,
+          "unique_values": 1
+        },
+        "LOW_SPEED_LOCKOUT": {
+          "present": true,
+          "count": 3780,
+          "min": 1,
+          "max": 1,
+          "mean": 1.0,
+          "all_zero": false,
+          "unique_values": 1
+        }
+      },
+      "approx_hz": 63.0,
+      "hz_ok": true
+    },
+    "PCM_CRUISE_SM": {
+      "present": true,
+      "msg_count": 116,
+      "signals": {
+        "MAIN_ON": {
+          "present": true,
+          "count": 116,
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "all_zero": true,
+          "unique_values": 1
+        },
+        "CRUISE_CONTROL_STATE": {
+          "present": true,
+          "count": 116,
+          "min": 0,
+          "max": 0,
+          "mean": 0.0,
+          "all_zero": true,
+          "unique_values": 1
+        },
+        "UI_SET_SPEED": {
+          "present": true,
+          "count": 116,
+          "min": 40,
+          "max": 40,
+          "mean": 40.0,
+          "all_zero": false,
+          "unique_values": 1
+        }
+      },
+      "approx_hz": 1.9,
+      "hz_ok": true
+    }
+  },
+  "dbc_coverage": {
+    "dbc_messages_defined": 54,
+    "dbc_messages_seen_in_traffic": 41,
+    "coverage_pct": 75.9,
+    "messages_seen": [
+      "ACC_CONTROL",
+      "ADAS_TOGGLE_STATE",
+      "AUTO_HIGH_BEAM",
+      "BLINKERS_STATE",
+      "BODY_CONTROL_STATE",
+      "BODY_CONTROL_STATE_2",
+      "BRAKE_2",
+      "BRAKE_MODULE",
+      "CERTIFICATION_ECU",
+      "DSU_CRUISE",
+      "DSU_SPEED",
+      "ENG2F41",
+      "ENG2F42",
+      "ENGINE_RPM",
+      "EPS_STATUS",
+      "ESP_CONTROL",
+      "GAS_PEDAL",
+      "GAS_PEDAL_HYBRID",
+      "GEAR_PACKET",
+      "KINEMATICS",
+      "LEAD_INFO",
+      "LIGHT_STALK",
+      "LKAS_HUD",
+      "PCM_CRUISE",
+      "PCM_CRUISE_2",
+      "PCM_CRUISE_SM",
+      "PRE_COLLISION",
+      "PRE_COLLISION_2",
+      "RSA1",
+      "RSA2",
+      "RSA3",
+      "SOLAR_SENSOR",
+      "SPEED",
+      "STEERING_LKA",
+      "STEER_ANGLE_SENSOR",
+      "STEER_TORQUE_SENSOR",
+      "UI_SETTING",
+      "VSC1S07",
+      "VSC1S08",
+      "VSC1S29",
+      "WHEEL_SPEEDS"
+    ],
+    "messages_not_seen": [
+      "AUTOPARK_STATUS",
+      "BRAKE",
+      "CLUTCH",
+      "DOOR_LOCKS",
+      "GEAR_PACKET_HYBRID",
+      "PCM_CRUISE_ALT",
+      "PCS_HUD",
+      "REVERSE_CAMERA_STATE",
+      "STEERING_IPAS",
+      "TIME",
+      "VIN_PART_1",
+      "VIN_PART_2",
+      "VIN_PART_3"
+    ]
+  },
+  "unmatched_addresses": {
+    "count": 128,
+    "top_20": [
+      {
+        "address": "0x02C",
+        "count": 9996
+      },
+      {
+        "address": "0x220",
+        "count": 6056
+      },
+      {
+        "address": "0x0FA",
+        "count": 5000
+      },
+      {
+        "address": "0x0BA",
+        "count": 4856
+      },
+      {
+        "address": "0x232",
+        "count": 4438
+      },
+      {
+        "address": "0x1D0",
+        "count": 3780
+      },
+      {
+        "address": "0x2E7",
+        "count": 3750
+      },
+      {
+        "address": "0x141",
+        "count": 3749
+      },
+      {
+        "address": "0x072",
+        "count": 3348
+      },
+      {
+        "address": "0x32C",
+        "count": 2486
+      },
+      {
+        "address": "0x1AA",
+        "count": 2428
+      },
+      {
+        "address": "0x32A",
+        "count": 2428
+      },
+      {
+        "address": "0x32F",
+        "count": 2308
+      },
+      {
+        "address": "0x128",
+        "count": 1875
+      },
+      {
+        "address": "0x217",
+        "count": 1200
+      },
+      {
+        "address": "0x218",
+        "count": 1200
+      },
+      {
+        "address": "0x219",
+        "count": 1200
+      },
+      {
+        "address": "0x21A",
+        "count": 1200
+      },
+      {
+        "address": "0x21B",
+        "count": 1200
+      },
+      {
+        "address": "0x21C",
+        "count": 1200
+      }
+    ]
+  },
+  "decode_errors": {
+    "PCS_HUD": 120
+  }
+}
