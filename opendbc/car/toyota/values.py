@@ -356,10 +356,6 @@ class CAR(Platforms):
     [ToyotaCarDocs("Lexus LC 2024-25")],
     CarSpecs(mass=4500. * CV.LB_TO_KG, wheelbase=2.87, steerRatio=13.0, tireStiffnessFactor=0.444),
   )
-  LEXUS_LC_TSS2 = ToyotaTSS2PlatformConfig(
-    [ToyotaCarDocs("Lexus LC 2024")],
-    CarSpecs(mass=4500. * CV.LB_TO_KG, wheelbase=2.87, steerRatio=13.0, tireStiffnessFactor=0.444),
-  )
   LEXUS_RC = PlatformConfig(
     [ToyotaCarDocs("Lexus RC 2018-20")],
     LEXUS_IS.specs,
