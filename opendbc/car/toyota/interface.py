@@ -98,6 +98,7 @@ class CarInterface(CarInterfaceBase):
 
     elif candidate == CAR.LEXUS_LC:
       stop_and_go = True  # FSDRCC stock — all-speed ACC including stop-and-go
+      ret.steerActuatorDelay = 0.15  # VGRS electromechanical lag; default 0.12 is for non-VGRS
 
     # TODO: these models can do stop and go, but unclear if it requires sDSU or unplugging DSU.
     #  For now, don't list stop and go functionality in the docs
