@@ -29,3 +29,12 @@ opendbc/dbc/*_generated.dbc
 
 cppcheck-addon-ctu-file-list
 opendbc/safety/tests/coverage-out
+sunnypilot/neural_network_data/
+openpilot/
+tools/
+reference/
+patches/
+audit-lc500-redteam.md
+metaprompt-*.prompt.md
+plan-*.prompt.md
+*.patch
